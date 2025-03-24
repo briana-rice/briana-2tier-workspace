@@ -35,8 +35,8 @@ resource "aws_db_instance" "this" {
   identifier              = "${var.environment_name}-mysql-db"
   allocated_storage       = 20
   engine                  = "mysql"
-  engine_version          = "5.7"
-  instance_class          = "db.t2.micro"
+  engine_version          = "5.7.44"
+  instance_class          = "db.t3.micro"
   db_name                 = var.db_name
   username                = var.db_username
   password                = var.db_password
